@@ -551,30 +551,30 @@ except KeyError:
 try:
     GD_INFO = getConfig('GD_INFO')
     if len(GD_INFO) == 0:
-        GD_INFO = 'Uploaded by Helios Mirror Bot'
+        GD_INFO = 'Uploaded by OCX-Mirror-Bot'
 except KeyError:
-    GD_INFO = 'Uploaded by Helios Mirror Bot'
+    GD_INFO = 'Uploaded by OCX-Mirror-Bot'
 
 try:
     TITLE_NAME = getConfig('TITLE_NAME')
     if len(TITLE_NAME) == 0:
-        TITLE_NAME = 'Helios-Mirror-Search'
+        TITLE_NAME = 'OCX-Mirror-Bot-Search'
 except KeyError:
-    TITLE_NAME = 'Helios-Mirror-Search'
+    TITLE_NAME = 'OCX-Mirror-Bot-Search'
 
 try:
     AUTHOR_NAME = getConfig('AUTHOR_NAME')
     if len(AUTHOR_NAME) == 0:
-        AUTHOR_NAME = 'Helios-Mirror-Bot'
+        AUTHOR_NAME = 'OCX-Mirror-Bot'
 except KeyError:
-    AUTHOR_NAME = 'Helios-Mirror-Bot'
+    AUTHOR_NAME = 'OCX-Mirror-Bot'
 
 try:
     AUTHOR_URL = getConfig('AUTHOR_URL')
     if len(AUTHOR_URL) == 0:
-        AUTHOR_URL = 'https://t.me/heliosmirror'
+        AUTHOR_URL = 'https://t.me/opencloudxlogs'
 except KeyError:
-    AUTHOR_URL = 'https://t.me/heliosmirror'
+    AUTHOR_URL = 'https://t.me/opencloudxmirror'
 
 try:
     BOT_PM = getConfig('BOT_PM')
