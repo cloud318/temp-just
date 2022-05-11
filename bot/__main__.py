@@ -22,7 +22,7 @@ from .helper.telegram_helper.filters import CustomFilters
 from .helper.telegram_helper.button_build import ButtonMaker
 from .modules import authorize, list, cancel_mirror, mirror_status, mirror, clone, watch, shell, eval, delete, count, leech_settings, search, rss
 
-IMAGE_X = "https://telegra.ph/file/ccfc71eaaa7e1c6de4f11.jpg"
+IMAGE_X = "https://i.pinimg.com/originals/8b/ac/a2/8baca2730d67f8a6f8f4eca8390b1abf.jpg"
 
 def stats(update, context):
     if ospath.exists('.git'):
@@ -70,8 +70,8 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("Updates Channel", "https://t.me/AnimeDynastyEN")
-    buttons.buildbutton("Support Group", "https://t.me/AnimeDynastyEN_Support")
+    buttons.buildbutton("Updates Channel", "https://t.me/opencloudxlogs")
+    buttons.buildbutton("Support Group", "https://t.me/opencloudxmirror")
     uname = f'<a href="tg://user?id={update.message.from_user.id}">{update.message.from_user.first_name}</a>'
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
@@ -207,12 +207,12 @@ leech_help_string_telegraph = f'''<br>
 
 if LEECH_ENABLED:
     help = telegraph.create_page(
-        title='Mirror Hunter & Leech Help',
+        title='Ocx-Mirror & Leech Help',
         content=mirror_help_string_telegraph + leech_help_string_telegraph,
     )["path"]
 else:
     help = telegraph.create_page(
-        title='Mirror Hunter Help',
+        title='Ocx-Mirror Help',
         content=mirror_help_string_telegraph,
     )["path"]
 
@@ -220,7 +220,7 @@ else:
 if OWNER_ID:
     try:
         help = telegraph.create_page(
-        title='Mirror Hunter Help',
+        title='Ocx-Mirror Help',
         content=mirror_help_string_telegraph + leech_help_string_telegraph + sudo_help_string_telegraph,
     )["path"]
     except Exception as e:
